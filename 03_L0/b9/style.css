@@ -1,0 +1,119 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.title{
+    color: #ffce1b;
+    font-size: 44px;
+}
+.container{
+    display: grid;
+    width: 90%;
+    height: auto;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+}
+.title{
+    width: 100%;
+    text-align: center;
+}
+.items{
+    
+    width: 100%;
+    height: auto;
+    
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#ibm{
+    width: 200px;
+    padding-top: 60px;
+    padding-bottom:60px;
+}
+#win{
+    width: 100px;
+    padding: 50px;
+}
+#apple{
+    width: 160px;
+    padding:20px
+}
+#gg{
+    height: 80px;
+    padding-top: 60px;
+    padding-bottom:60px;
+}
+
+.content p{
+    text-align: center;
+    font-style: italic;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+@media only screen and (max-width:425px) {
+    .title{
+        font-size:20px;
+    }
+    .container{
+        grid-template-columns: 100%;
+    }
+    #ibm{
+        width: 100px;
+        padding-top: 30px;
+        padding-bottom:30px;
+    }
+    #win{
+        width: 50px;
+        padding: 25px;
+    }
+    #apple{
+        width: 80px;
+        padding:10px
+    }
+    #gg{
+        height: 40px;
+        padding-top: 30px;
+        padding-bottom:30px;
+    }
+
+    .content p{
+        font-size: 12px;
+
+    }
+}@media only screen and (min-width:425px)and (max-width:725px) {
+    .title{
+        font-size: 32px;
+    }
+    .container{
+        grid-template-columns: 50% 50%;
+        
+    }
+    #ibm{
+        width: 150px;
+        padding-top: 45px;
+        padding-bottom:45px;
+    }
+    #win{
+        width: 75px;
+        padding: 37.5px;
+    }
+    #apple{
+        width: 100px;
+        padding:25px
+    }
+    #gg{
+        height: 60px;
+        padding-top: 45px;
+        padding-bottom:45px;
+    }
+    .content p{
+        font-size: 14px;
+
+    }
+}

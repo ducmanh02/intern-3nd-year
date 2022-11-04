@@ -1,0 +1,77 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color:#b6aab4;
+    font-size: small;
+    line-height: 40px;
+}
+#btn1{ 
+    background-color: #04AA6D;
+    color:white;
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    
+}
+#btn1:hover{
+    opacity: 0.7;
+}
+
+
+#box1{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%);
+    height: 330px;
+    width: 300px;
+    background: whitesmoke;
+     
+}
+
+.xbtn{
+    transform: translate(276px,-9px);
+}
+.text-mem{ 
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.input-form{
+    display:inline-block;
+    margin-left: 50%;
+    width: 70%;
+    transform: translate(-50%);
+}
+.fa-solid{
+    transform: translate(9px,30px);
+}
+input[type=text],checked{
+    display: inline-block;
+    height: 30px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    padding: 5px;
+    padding-left: 30px;
+    margin-bottom: 5px;
+    
+}
+#btn1{
+    margin-top: 10px;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+.forgot-pass{
+    height: 40px;
+    width: 100%;
+    background-color: #ecf0f1;
+    text-align: center;
+}
+

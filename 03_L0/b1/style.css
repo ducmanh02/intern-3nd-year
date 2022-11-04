@@ -1,0 +1,126 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+}
+.content{
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    height: 200px;
+    width: 650px;
+    background-color: rgb(245, 245, 244);
+}
+.box1{
+    height: 35px;
+    width: 150px;
+    background-color: rgb(133,152,204);
+    color:white;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 35px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.box1 p {
+    font-size: 20px;
+}
+.text1{
+    padding-top: 15px;
+    font-size: 30px;
+    text-align: center;
+}
+.text1 p{
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.box2{
+    display: flex;
+    justify-content: center;
+}
+.item{
+    height: 30px;
+    width: 150px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0 10px;
+    padding-top:10px;
+    border-radius:5px ;
+}
+@media only screen and (max-width:470px) {
+    .content{
+        width: 350px;
+        height: 170px;
+    }
+    .box1{
+        height: 25px;
+        width: 100px;
+        line-height: 25px;
+    }
+    .box1 p{
+        font-size: 14px;
+    }
+    .text1{
+        font-size: 18px;
+        padding: 5px 5px;
+    }
+    .text1 p{
+        font-size: 12px;
+    }
+    .item{
+        height: 18px;
+        width: 80px;
+        font-size: 10px;
+        line-height: 10px;
+    }
+}
+@media only screen and (min-width:470px)and (max-width:625px) {
+    .content{
+        width: 450px;
+    }
+    .box1{
+        height: 30px;
+        width: 100px;
+        line-height: 30px;
+    }
+    .box1 p{
+        font-size: 14px;
+    }
+    .text1{
+        font-size: 22px;
+        padding: 10px 10px;
+    }
+    .item{
+        height: 22px;
+        width: 110px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+}
+@media only screen and (min-width:626px)and (max-width:825px) {
+    .content{
+        width: 500px;
+    }
+    .box1{
+        height: 30px;
+        width: 120px;
+        line-height: 30px;
+    }
+    .box1 p{
+        font-size: 18px;
+    }
+    .text1 {
+        font-size: 24px;
+        padding: 10px 10px;
+    }
+    .item{
+        height: 26px;
+        width: 130px;
+    }
+}

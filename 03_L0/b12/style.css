@@ -1,0 +1,111 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.title1{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 10px;
+    margin-left: 30px;
+}
+hr{
+    width: 30px;
+    float: left;
+    position: relative;
+    left :30px;
+    top:-10px;
+    background-color :#fcb739;
+    color: #fcb739;
+    height:2px;
+    border-width:0;
+    margin-bottom: 15px;
+}
+.contact{
+    background-color: #dadada;
+}
+.content{
+    display: grid;
+    width: 80%;
+    height: auto;
+    grid-template-columns: 30% 60%;
+    column-gap: 30px;
+    
+    padding: 10px;
+}
+i{
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    opacity: 0.7;
+}
+.info{
+    width: 80%;
+}
+.fa-solid{
+    font-size: 16px;
+}
+.info .title2 {
+    opacity: 1;
+    font-size: 16px;
+    font-weight:500;
+}
+.info p {
+    opacity: 0.7;
+    font-size: 13px;
+}
+.title3{
+    font-size:16px ;
+    font-weight:500;
+
+}
+input[type=text] {
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    border: none;
+    outline: none;
+}
+.name, .email, .subject, .message{
+    font-size: 13px;
+    padding: 10px;
+}
+.message{
+    padding-bottom: 100px;
+}
+.btn1{
+    color: white;
+    background-color: #30b8b6;
+    border: none;
+    font-size: 12px;
+    padding: 10px 10px;
+}
+@media only screen and (max-width:426px) {
+    .info p {
+        font-size: 8px;
+    }
+    .fa-solid{
+        font-size: 14px;
+    }
+    .name, .email, .subject, .message{
+        font-size: 12px;
+        padding: 5px;
+    }
+    .message{
+        padding-bottom: 80px;
+    }
+
+}
+@media only screen and (min-width:425px)and (max-width:625px) {
+    .info p {
+        font-size: 12px;
+    }
+    .fa-solid{
+        font-size: 16px;
+    }
+    .name, .email, .subject, .message{
+        font-size: 14px;
+        padding: 5px;
+    }
+    .message{
+        padding-bottom: 80px;
+    }
+}
