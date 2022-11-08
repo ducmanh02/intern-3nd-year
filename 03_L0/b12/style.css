@@ -80,7 +80,16 @@ input[type=text] {
 }
 @media only screen and (max-width:426px) {
     .info p {
-        font-size: 8px;
+        font-size: 12px;
+    }
+    .content{
+        display: grid;
+        
+        height: auto;
+        grid-template-columns: 100%;
+        
+        
+        padding: 10px;
     }
     .fa-solid{
         font-size: 14px;
@@ -97,6 +106,15 @@ input[type=text] {
 @media only screen and (min-width:425px)and (max-width:625px) {
     .info p {
         font-size: 12px;
+    }
+    .content{
+        display: grid;
+        
+        height: auto;
+        grid-template-columns: 100%;
+        
+        
+        padding: 10px;
     }
     .fa-solid{
         font-size: 16px;

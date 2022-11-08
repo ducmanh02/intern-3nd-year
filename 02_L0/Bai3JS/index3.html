@@ -17,14 +17,15 @@
             <div class="text-mem"> <h3>Member Login</h3></div>
             <div class="input-form ">
                 <i class="fa-solid fa-user"></i>
-                <input id="user" type="text"  placeholder="Username"  > <br> 
+                <input id="user" type="text"  placeholder="Username"  >
                 <span style="color: red;font-size: 14px;" id="loiuser"></span><br>
                 
                 <i class="fa-solid fa-lock"></i>            
                 <input id="pass" type="password" placeholder="Password" > <br>   
                 <span style="color: red;font-size: 14px;" id="loipass"></span>
-                <span id="tcong" style="color: green;font-size: 14px;"></span> 
+                
                 <button id="login_btn" class="btn1" type="button" onclick="loading_f()">Login</button>
+                <span id="tcong" style="color: green;font-size: 14px;"></span> 
             </div>
             <button type="button" class="forgot-pass" onclick="forgot_btn()" >Forgot Password?</button>
         </div>
@@ -39,6 +40,7 @@
                 <span style="color: red;font-size: 14px;" id="loinewpass"></span>
                 
                 <button id="save_btn" class="btn1" type="button" onclick="loading_function()" >Save</button>
+                <button type="button" class="forgot-pass back" onclick="back()" >Back</button>
             </div>
         </div>
     </form>

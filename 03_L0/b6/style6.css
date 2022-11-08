@@ -11,7 +11,7 @@
 }
 .items{
     height: 170px;
-    width: 300px;
+    width: 100%;
     background-color: #f8f8f8;
     padding-top: 30px;
 
@@ -23,11 +23,12 @@ i{
     border-radius: 50%;
     border: 2px solid #339999;
     padding: 10px;
+    font-size: 28px;
 }
 @media only screen and (max-width:526px) {
     .container{
         display: grid;
-        grid-template-columns:  auto auto;
+        grid-template-columns: auto;
         font-size: 10px;
     }
     .container h2{
@@ -35,7 +36,7 @@ i{
     }
     .items{
         height: 120px;
-        width: 160px;
+        width: 100%;
         background-color: #f8f8f8;
         padding-top: 10px;
     }
@@ -43,20 +44,20 @@ i{
         font-size: 12px;
     }
     i{
-        font-size: 0.8em;
+        font-size: 1.5em;
     }
 }
-@media only screen and (min-width:526px) and (max-width:767px) {
+@media only screen and (min-width:526px) and (max-width:768px) {
     .container{
         display: grid;
-        grid-template-columns:  auto auto auto;
+        grid-template-columns: auto auto;
     }
     .container h2{
         font-size: 16px;
     }
     .items{
         height: 150px;
-        width: 180px;
+        width: 100%;
         background-color: #f8f8f8;
         padding-top: 15px;
     }
@@ -64,12 +65,13 @@ i{
         font-size: 13px;
     }
     i{
-        font-size: 1em;
+        font-size: 1.5em;
     }
 }
 @media only screen and (min-width:768px) and (max-width:1400px) {
     .container{
         display: grid;
+        width: 100%;
         grid-template-columns:  auto auto auto;
         font-size: 10px;
     }
@@ -78,7 +80,7 @@ i{
     }
     .items{
         height: 170px;
-        width: 300px;
+        width: 100%;
         background-color: #f8f8f8;
         padding-top: 30px;
     }
@@ -86,6 +88,6 @@ i{
         font-size: 16px;
     }
     i{
-        font-size: 1.5em;
+        font-size: 2em;
     }
 }

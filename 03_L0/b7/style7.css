@@ -66,7 +66,10 @@ hr{
     width: 80%;
 }
 @media only screen and (max-width: 426px){
-    
+    .item{
+        display: grid;
+        grid-template-columns: auto;
+    }
     .title{
         font-size: 16px;
     }
@@ -86,7 +89,7 @@ hr{
         font-size: 8px;
     }
 }
-@media only screen and (min-width:426px)and (max-width:769px) {
+@media only screen and (min-width:426px)and (max-width:768px) {
     .title{
         font-size: 18px;
     }

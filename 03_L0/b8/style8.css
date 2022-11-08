@@ -2,17 +2,24 @@
     font-family: Arial, Helvetica, sans-serif;
 
 }
+h1{
+    margin-left: 5%;
+}
 .container{
     display: flex;
-    
+    position: relative;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     height: auto;
+    left: 5%;
     
 }
 .items{
-    width: 90%;
+    position: relative;
+    width: 100%;
     height: auto;
+    
+    
     background-color:#fbfbfb ;
     padding: 10px;
     margin-bottom: 10px ;

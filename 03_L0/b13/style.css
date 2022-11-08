@@ -31,6 +31,10 @@ hr{
     padding: 10px;
 
 }
+/* .items{
+    display: grid;
+    grid-template-columns:18% 60%;
+} */
 .avatar{
     display: inline-block;
     position: relative;
@@ -43,12 +47,17 @@ hr{
     padding: 2px 23px;
     border-radius: 50%;
     font-size: 18px;
-    margin-right: 10px;
-    margin-bottom: 30px;
+    margin-right: 15px;
+    margin-bottom: 25px;
+    margin-top:10px;
+}
+
+.comment{
+    
 }
 .comment p{
     font-size: 14px;
-
+    /* float: right; */
     font-style: italic;
     opacity: 0.8;
     
@@ -72,7 +81,7 @@ hr{
 }
 @media only screen and (min-width:426px)and (max-width:769px) {
     .content{
-        grid-template-columns: auto auto;
+        grid-template-columns:  auto;
         row-gap: 20px;
     }
     .comment p{

@@ -1,0 +1,9 @@
+02. bài 1. fix a5 dính vào a4
+    bài 2. fix đổi mk thành công
+03. bài 3 fix btn và input rộng ra 
+    bài 6 icon to ra và res đt thì cho items 1 dòng	
+    bài 7 res đt cho xuống 1 dòng
+    bài 8 căn giữa
+    bài 11 2 input đầu res đt mỗi cái 1 dòng, fix dòng chữ trên btn và btn to ra 
+    bài 12 contact lên 1 dòng riêng
+    bài 13 chữ không dưới avatar

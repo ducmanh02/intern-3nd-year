@@ -22,7 +22,7 @@ a:hover{
     padding-top: 20px;
     padding-left:5px ;
     padding-right: 5px;
-    background: url("./bg_special.png") no-repeat left top;
+    background: url("./bg_special.png") left top;
 }
 .title{
     font-size: 28px;
