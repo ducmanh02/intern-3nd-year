@@ -1,5 +1,7 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 .title{
     color: #ffce1b;
@@ -9,6 +11,7 @@
     display: grid;
     width: 90%;
     height: auto;
+    margin: auto;
     grid-template-columns: 50% 50%;
     gap: 10px;
 }
@@ -29,7 +32,7 @@
     align-items: center;
 }
 
-
+/* image */
 #ibm{
     width: 200px;
     padding-top: 60px;
@@ -44,7 +47,7 @@
     padding:20px
 }
 #gg{
-    height: 80px;
+    height: 100px;
     padding-top: 60px;
     padding-bottom:60px;
 }
@@ -54,13 +57,14 @@
     font-style: italic;
     font-size: 16px;
     opacity: 0.8;
+    margin-bottom: 15px;
 }
-
-@media only screen and (max-width:425px) {
+@media only screen and (max-width:600px) {
     .title{
         font-size:20px;
     }
     .container{
+        display: grid;
         grid-template-columns: 100%;
     }
     #ibm{
@@ -86,13 +90,13 @@
         font-size: 12px;
 
     }
-}@media only screen and (min-width:425px)and (max-width:725px) {
+}@media only screen and (min-width:600px) and (max-width:992px) {
     .title{
         font-size: 32px;
     }
     .container{
-        grid-template-columns: 50% 50%;
-        
+        grid-template-columns: 48% 48%;
+        column-gap: 20px;
     }
     #ibm{
         width: 150px;

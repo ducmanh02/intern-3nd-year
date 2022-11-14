@@ -1,28 +1,33 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 .title{
     font-size: 18px;
     font-weight: bold;
     text-align: left;
+    margin-bottom: 30px;
 }
 .container{
     border: 2px solid #eeeeee;
     display: block;
-    height: 450px;
     width: 60%;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-    padding: 0px 20px;
+    margin: auto;
+    padding:  20px;
 }
 
 input[type=text] {
     border: 1px solid #eeeeee;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px 0 #ddd inset;
     font-size: 14px;
+    
+    margin-bottom: 10px;
+    height: 40px;
 }
 #fullName{
-    margin-bottom: 5px;
+    
     width: 45%;
     padding:5px;
 }
@@ -30,18 +35,18 @@ input[type=text] {
     float:right;
     position: relative;
     left:12px;
-    margin-bottom: 5px;
+    
     width: 45%;
     padding:5px;
 
 }
 #subject{
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     width: 100%;
     padding:5px;
 }
 #mess{
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 200px;
@@ -49,13 +54,17 @@ input[type=text] {
     
 }
 .btn{
-    padding: 7px 14px;
-    font-size: 10px;
-    background-color:#7dcefd;
-    color:#fff;
-    border-radius: 5px;
-    border: 1px solid #459bcd ;
+    background-color: #7dcefd;
+    border: 1px solid #59a8d5;
+    border-radius: 4px;
+    color: #fff;
     cursor: pointer;
+    min-width: 125px;
+    padding: 11px 10px;
+    text-align: center;
+}
+.btn:hover{
+    opacity: 0.7;
 }
 .plus{
     position: relative;
@@ -63,14 +72,18 @@ input[type=text] {
     opacity: 0.6;
     float: right;
     font-size: 12px;
+    /* margin-bottom: 5px; */
 }
-@media only screen and (max-width:425px) {
+@media only screen and (max-width:600px) {
+    .container{
+        width: 80%;
+    }
     .title{
-        font-size:12px;
+        font-size:14px;
     }
     input[type=text] {
         border: 1px solid #eeeeee;
-        font-size: 8px;
+        font-size: 12px;
     }
     #fullName{
         width: 100%;
@@ -82,26 +95,23 @@ input[type=text] {
     #mess{
         padding-bottom: 100px;
     }
-    button{
-        position: relative;
-        width: 80%;
-        left: 10%;
-    }
+    
     .btn{
-        padding: 5px 10px;
-        font-size: 7px;
+        padding: 14px 14px;
+        font-size: 14px;
+        width: 100%;
     }
     .plus{
-        font-size: 8px;
+        font-size: 10px;
     }
 }
-@media only screen and (min-width:425px)and (max-width:625px) {
+/* @media only screen and (min-width:425px)and (max-width:625px) {
     .title{
-        font-size:14px;
+        font-size:16px;
     }
     input[type=text] {
         border: 1px solid #eeeeee;
-        font-size: 10px;
+        font-size: 12px;
     }
     #fullName{
         width: 100%;
@@ -119,11 +129,11 @@ input[type=text] {
         left: 20%;
     }
     .btn{
-        padding: 5px 10px;
-        font-size: 8px;
+        padding: 7px 14px;
+        font-size: 10px;
     }
     .plus{
-        font-size: 8px;
+        font-size: 10px;
     }
 }
 @media only screen and (min-width:626px)and (max-width:825px) {
@@ -132,4 +142,4 @@ input[type=text] {
         width: 60%;
         left: 20%;
     }
-}
+} */

@@ -1,11 +1,17 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: #98999c;
+    font-family: Helvetica,sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
 }
 .container{
-    display: inline-block;
     width: 100%;
-    height: auto;
-    
+    margin: auto;
 }
 .item{
     display: grid;
@@ -13,88 +19,110 @@
 }
 
 .title{
+    color:black;
+    margin: 60px 0 30px 0;
     font-size: 32px;
     opacity: 0.7;
 }
+
 .nd{
     font-size: 16px;
     opacity: 0.7;
+    margin-bottom: 30px;
 }
 
 
 .scp1, .scp2{
     width: 70%;
-    height: 40%;
     line-height: 28px;
     position: relative;
-    top: 30%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate( -50%);
     
 }
-.scp2{
-    padding-bottom: 30px;
-}
+
 .btn1{
-    padding: 10px;
+    padding: 0 23px;
+    font-size: 11px;
     background-color: #75bee1;
     color: white;
     border: none;
-    border-radius: 15px;
+    border-radius: 30px;
     cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    height: 41px;
+    line-height: 41px;
+    opacity: 1;
 }
 .btn2{
-    padding: 10px;
     background-color: #95d075;
+    padding: 0 23px;
+    font-size: 11px;
     color: white;
     border: none;
-    border-radius: 15px;
+    border-radius: 30px;
     cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    height: 41px;
+    line-height: 41px;
+    opacity: 1;
+
 }
 .btn1:hover , .btn2:hover{
     opacity: 0.7;
 }
 .image-1, .image-2{
-    height: 400px;
+    height: 300px;
     position: relative;
     left: 50%;
     transform: translate(-50%);
-    left: 50%;
+    padding: 50px 0px;
 }
-
 hr{
+    color: #e7e9eb;
+    position: relative;
     width: 80%;
+    margin:auto;
+    margin-bottom: 30px;
 }
-@media only screen and (max-width: 426px){
+ @media only screen and (max-width: 600px){
     .item{
         display: grid;
         grid-template-columns: auto;
     }
     .title{
-        font-size: 16px;
+        font-size: 24px;
+        line-height: 24px;
     }
     .nd{
-        font-size: 8px;
+        font-size: 14px;
+        line-height: 14px;
     }
     .scp1, .scp2{
-        line-height: 13px;
         margin-bottom: 20px;
     }
     .image-1, .image-2{
         margin-top: 30px;
         width: 120px;
         height: auto;
+        padding: 20px 0px;
     }
     .btn1, .btn2{
-        font-size: 8px;
+        width: 100%;
+        font-size: 10px;
+        padding: 0 28px;
     }
 }
-@media only screen and (min-width:426px)and (max-width:768px) {
+
+@media only screen and (min-width:600px)and (max-width:992px) {
     .title{
-        font-size: 18px;
+        font-size: 26px;
+        line-height: 26px;
     }
     .nd{
-        font-size: 10px;
+        font-size: 14px;
     }
     .scp1, .scp2{
         line-height: 15px;
@@ -102,13 +130,17 @@ hr{
     }
     .image-1, .image-2{
         margin-top: 30px;
-        width: 150px;
-        height: auto;
+        width: 160px;
+        height: auto;   
+        padding: 20px 0px;
     }
     .btn1, .btn2{
+        width: 100%;
         font-size: 10px;
+        padding: 0 28px;
     }
 }
+/*
 @media only screen and (min-width:768px)and (max-width:1024px) {
     .title{
         font-size: 28px;
@@ -117,8 +149,10 @@ hr{
         font-size: 14px;
     }
     .image-1, .image-2{
-        width: 320px;
+        margin-top: 30px;
+        width: 180px;
         height: auto;
+        padding: 50px 0px;
     }
     
-}
+} */

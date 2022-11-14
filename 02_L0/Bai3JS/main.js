@@ -88,14 +88,14 @@ function validateNew(){
     const oldPass = document.getElementById('oldpass').value;
     const newPass = document.getElementById('newpass').value;
     if(oldPass.trim().length == 0){
-        document.getElementById("loioldpass").innerHTML = "Xin mời nhập lại"
+        document.getElementById("loioldpass").innerHTML = "Xin mời nhập mật khẩu cũ"
         return false;
     }
     else{
         document.getElementById("loioldpass").innerHTML = "";
     }
     if(newPass.trim().length == 0){
-        document.getElementById("loinewpass").innerHTML = "Xin mời nhập lại"
+        document.getElementById("loinewpass").innerHTML = "Xin mời nhập mật khẩu mới"
         return false;
     }
     else{

@@ -1,39 +1,47 @@
 *{
     box-sizing: border-box;
     font-family: Helvetica,sans-serif;
-    
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size: 14px;
 }
 a{
     text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
     color:white;
-    padding: 10px;
     background:#e2523c ;
-    border-radius: 5px;
+    border-radius: 4px;
+    font-size: 16px;
+    opacity: 1;
+    padding: 16px 14px;
 }
 a:hover{
     opacity: 0.8;
 }
 .content{
-    height: 250px;
     width: 100%;
+    position: relative;
     text-align: center;
     color: white;
-    line-height: 25px;
-    padding-top: 20px;
-    padding-left:5px ;
-    padding-right: 5px;
+
+    padding: 80px 0 60px;
     background: url("./bg_special.png") left top;
 }
 .title{
-    font-size: 28px;
+    font-size: 22px;
+    margin: 20px 0;
 }
 .scp{
     font-size: 18px;
     opacity: 0.7;
+    margin-bottom: 30px;
 }
-@media only screen and (max-width:425px) {
+/* @media only screen and (max-width:425px) {
     .content{
-        height: 200px;
+        height: 250px;
         width: 100%;
         padding-top: 10px;
         padding-left:5px ;
@@ -44,21 +52,23 @@ a:hover{
     }
     .scp{
         font-size: 12px;
+        margin-bottom: 20px;
     }
     a{
         font-size:12px ;
         padding: 7px;
     }
 }
-@media only screen and (min-width:426px)and (max-width:725px) {
+@media only screen and (min-width:425px)and (max-width:725px) {
     .title{
         font-size: 20px;
     }
     .scp{
         font-size: 14px;
+        margin-bottom: 40px;
     }
     a{
         font-size:15px ;
         padding: 8px;
     }
-}
+} */

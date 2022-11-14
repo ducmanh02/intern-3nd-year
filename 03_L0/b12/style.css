@@ -4,6 +4,7 @@
 .title1{
     font-size: 20px;
     font-weight: 300;
+    padding-top: 20px;
     margin: 10px;
     margin-left: 30px;
 }
@@ -26,7 +27,7 @@ hr{
     display: grid;
     width: 80%;
     height: auto;
-    grid-template-columns: 30% 60%;
+    grid-template-columns: 35% 65%;
     column-gap: 30px;
     
     padding: 10px;
@@ -38,7 +39,7 @@ i{
     opacity: 0.7;
 }
 .info{
-    width: 80%;
+    width: 100%;
 }
 .fa-solid{
     font-size: 16px;
@@ -77,35 +78,15 @@ input[type=text] {
     border: none;
     font-size: 12px;
     padding: 10px 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.btn1:hover{
+    opacity: 0.7;
 }
 @media only screen and (max-width:426px) {
     .info p {
-        font-size: 12px;
-    }
-    .content{
-        display: grid;
-        
-        height: auto;
-        grid-template-columns: 100%;
-        
-        
-        padding: 10px;
-    }
-    .fa-solid{
         font-size: 14px;
-    }
-    .name, .email, .subject, .message{
-        font-size: 12px;
-        padding: 5px;
-    }
-    .message{
-        padding-bottom: 80px;
-    }
-
-}
-@media only screen and (min-width:425px)and (max-width:625px) {
-    .info p {
-        font-size: 12px;
     }
     .content{
         display: grid;
@@ -122,8 +103,43 @@ input[type=text] {
     .name, .email, .subject, .message{
         font-size: 14px;
         padding: 5px;
+        height: 30px;
     }
     .message{
         padding-bottom: 80px;
+    }
+    .btn1{
+        width: 104%;
+
+    }
+
+}
+@media only screen and (min-width:425px)and (max-width:625px) {
+    .info p {
+        font-size: 14px;
+    }
+    .content{
+        display: grid;
+        
+        height: auto;
+        grid-template-columns: 100%;
+        
+        
+        padding: 10px;
+    }
+    .fa-solid{
+        font-size: 16px;
+    }
+    .name, .email, .subject, .message{
+        font-size: 14px;
+        padding: 5px;
+        height: 30px;
+    }
+    .message{
+        padding-bottom: 80px;
+    }
+    .btn1{
+        width: 104%;
+
     }
 }

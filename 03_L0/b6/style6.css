@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .container{
     display: grid;
     width: 100%;
@@ -6,14 +10,17 @@
     font-size: 16px;
     grid-gap: 20px;
 }
-.container p{
+.items h2{
+    margin: 20px 0; 
+}
+.items p{
     opacity : 0.7; 
+    margin-bottom: 20px;
 }
 .items{
-    height: 170px;
     width: 100%;
     background-color: #f8f8f8;
-    padding-top: 30px;
+    padding: 10px 0px;
 
 }
 
@@ -22,72 +29,46 @@ i{
     background-color: #f8f8f8;
     border-radius: 50%;
     border: 2px solid #339999;
-    padding: 10px;
-    font-size: 28px;
+    padding: 18px;
+    font-size: 26px;
+    margin-top: 20px;
 }
-@media only screen and (max-width:526px) {
+ @media only screen and (max-width:600px) {
     .container{
         display: grid;
         grid-template-columns: auto;
-        font-size: 10px;
+        
     }
-    .container h2{
-        font-size: 14px;
-    }
-    .items{
-        height: 120px;
-        width: 100%;
-        background-color: #f8f8f8;
-        padding-top: 10px;
+    .items h2{
+        font-size: 22px;
     }
     .items p{
-        font-size: 12px;
+        font-size: 14px;
+        margin-bottom: 20px;
     }
+
     i{
-        font-size: 1.5em;
+        font-size: 18px;
+        margin-top: 20px;
     }
 }
-@media only screen and (min-width:526px) and (max-width:768px) {
+
+@media only screen and (min-width:600px) and (max-width:992px) {
     .container{
         display: grid;
         grid-template-columns: auto auto;
+        
     }
-    .container h2{
-        font-size: 16px;
-    }
-    .items{
-        height: 150px;
-        width: 100%;
-        background-color: #f8f8f8;
-        padding-top: 15px;
+    .items h2{
+        font-size: 22px;
     }
     .items p{
-        font-size: 13px;
+        font-size: 14px;
+        margin-bottom: 20px;
     }
+
     i{
-        font-size: 1.5em;
-    }
-}
-@media only screen and (min-width:768px) and (max-width:1400px) {
-    .container{
-        display: grid;
-        width: 100%;
-        grid-template-columns:  auto auto auto;
-        font-size: 10px;
-    }
-    .container h2{
         font-size: 18px;
-    }
-    .items{
-        height: 170px;
-        width: 100%;
-        background-color: #f8f8f8;
-        padding-top: 30px;
-    }
-    .items p{
-        font-size: 16px;
-    }
-    i{
-        font-size: 2em;
+        margin-top: 20px;
     }
 }
