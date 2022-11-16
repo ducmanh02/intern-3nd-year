@@ -17,31 +17,33 @@
             <div class="text-mem"> <h3>Member Login</h3></div>
             <div class="input-form ">
                 <i class="fa-solid fa-user"></i>
-                <input id="user" type="text"  placeholder="Username"  >
-                <span style="color: red;font-size: 14px;" id="loiuser"></span><br>
+                <input oninput="remove_user()" id="user" type="text"  placeholder="Username"  >
+                <span class="error-pass" id="loiuser"></span><br>
                 
                 <i class="fa-solid fa-lock"></i>            
-                <input id="pass" type="password" placeholder="Password" > <br>   
-                <span style="color: red;font-size: 14px;" id="loipass"></span>
+                <input oninput="remove_pass()" id="pass" type="password" placeholder="Password" > <br>   
+                <span class="error-pass" id="loipass"></span>
                 
                 <button id="login_btn" class="btn1" type="button" onclick="loading_f()">Login</button>
-                <span id="tcong" style="color: green;font-size: 14px;"></span> 
+                <span id="tcong" class="success-pass"></span> 
             </div>
             <button type="button" class="forgot-pass" onclick="forgot_btn()" >Forgot Password?</button>
         </div>
         
         <div id="box2">
             <div class="text-mem"> <h3>Change Your Password</h3></div>
-            <div class="input-form ">
-                <input id="oldpass" type="password"  placeholder="Old Password"  > <br> 
-                <span style="color: red; font-size: 14px;" id="loioldpass"></span>
-                       
-                <input id="newpass" type="password" placeholder="New Password" > <br>   
-                <span style="color: red;font-size: 14px;" id="loinewpass"></span>
+            <div class="input-form forgot ">
+                <i class="fa-solid fa-lock"></i>
+                <input oninput="remove_oldpass()" id="oldpass" type="password"  placeholder="Old Password"  >
+                <span class="error-pass" id="loioldpass"></span><br>
+                <i class="fa-solid fa-lock"></i>
+                <input oninput="remove_newpass() "id="newpass" type="password" placeholder="New Password" >
+                <span class="error-pass" id="loinewpass"></span><br>
                 
                 <button id="save_btn" class="btn1" type="button" onclick="loading_function()" >Save</button>
-                <button type="button" class="forgot-pass back" onclick="back()" >Back</button>
+                
             </div>
+            <button type="button" class="forgot-pass back" onclick="back()" >Back</button>
         </div>
     </form>
     <script src="./main.js"></script>

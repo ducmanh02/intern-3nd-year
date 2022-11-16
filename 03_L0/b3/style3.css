@@ -9,18 +9,26 @@ body{
 }
 .content{
     width: 870px;
+    height: 60vh;
     margin: 0px auto;
+
     background-color:#f2f2f2;
     text-align: center;
-    padding: 30px 0 100px;
+    /* padding: 30px 0 100px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
 }
 #icon1 {
+    margin: 0px auto;
+    /* width: 10%; */
     border-radius: 50%;
     border: 2px solid #70cbce;
     display: inline-block;
-    padding: 15px;
+    padding: 18px;
     color: #70cbce;
-    margin-bottom: 35px;
+    /* margin-bottom: 35px; */
 
 }
 .title{
@@ -31,8 +39,14 @@ body{
 .scp{
     opacity: 0.8;
     font-size: 18px;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
+    padding: 0 20px;
 }
+/* .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
 input[type=text], select {
     width: 360px;
     padding: 20px 10px;
@@ -55,24 +69,27 @@ button{
 button:hover{
     opacity: 0.7;
 }
+.icon1{
+    font-size: 28px;
+}
 .btn{
     font-size: 14px;
     text-align: center;
 }
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:425px) {
     .content{
         height: 420px;
         width: 100%;
-        padding: 30px 0 0px;
+        /* padding: 30px 0 0px; */
     }
     .title{
         font-size: 28px;
     }
     .scp{
-        font-size: 14px;
+        font-size: 16px;
     }
     .btn{
-        font-size: 14px;
+        font-size: 15px;
     }
     button{
         width: 80%;
@@ -80,17 +97,17 @@ button:hover{
     input[type=text], select {
         padding: 20px 10px;
         width: 80%;
-        font-size:14px;
+        font-size:16px;
     }
     .fa-xl{
         font-size: 2em;
     }
 }
-@media only screen and (min-width:600px)and (max-width:768px) {
+@media only screen and (min-width:425px)and (max-width:600px) {
     .content{
         height: 400px;
         width: 100%;
-        padding: 30px 0 0px;
+        /* padding: 30px 0 0px; */
     }
     .title{
         font-size: 35px;
@@ -99,7 +116,30 @@ button:hover{
         font-size: 16px;
     }
     button{
+        width: 35%;
+    }
+    .btn{
+        font-size: 12px;
+    }
+    input[type=text], select {
+        padding: 20px 10px;
         width: 50%;
+        font-size:14px;
+    }
+}@media only screen and (min-width:600px)and (max-width:768px) {
+    .content{
+        height: 400px;
+        width: 100%;
+        /* padding: 30px 0 0px; */
+    }
+    .title{
+        font-size: 35px;
+    }
+    .scp{
+        font-size: 16px;
+    }
+    button{
+        width: 30%;
     }
     .btn{
         font-size: 12px;

@@ -3,14 +3,17 @@ function start(){
     document.getElementById('dangnhap').style.display='none';
 }
 function close_1(){
+    refresh();
+    document.getElementById('login_btn').innerHTML = "Login";
     document.getElementById('box1').style.display='none';
     document.getElementById('btn1').style.display= 'block';
+
 }
 
 var Passcu = 'admin';
 function validate(){
-    const user = document.getElementById('user').value;
-    const pass = document.getElementById('pass').value;
+    let user = document.getElementById('user').value;
+    let pass = document.getElementById('pass').value;
     if(user.trim().length == 0){
         document.getElementById("loiuser").innerHTML = "Xin mời nhập username"
         return false;
@@ -39,7 +42,7 @@ function validate(){
     }
     if(true) {
         document.getElementById("dangnhap").innerText = "Đăng nhập thành công!!";
-        document.getElementById("dangnhap").style.background = "antiquewhite";
+        document.getElementById("dangnhap").style.background = "green";
         document.getElementById('dangnhap').style.display='block';
         close_1();
     }
@@ -58,11 +61,30 @@ function refresh(){
 }
 
 const loading_f = ()=>{
-    document.getElementById('login_btn').innerHTML = "Loading...";
-    setTimeout(()=>{
-        validate();
-        document.getElementById('login_btn').innerHTML = "Login";
-    }, 1000)
+    let x = document.getElementById('user').value;
+    let y = document.getElementById('pass').value;
+    if(x.trim().length!=0 && y.trim().length!=0){
+        document.getElementById("loiuser").innerHTML = "";
+        document.getElementById("loipass").innerHTML = "";
+        document.getElementById('login_btn').innerHTML = "Loading...";
+        setTimeout(()=>{
+            validate();
+            document.getElementById('login_btn').innerHTML = "Login";
+        }, 1000)
+    }
+    else if(x.trim().length==0 && y.trim().length!=0){
+        document.getElementById("loipass").innerHTML = "";
+        document.getElementById("loiuser").innerHTML = "Xin mời nhập user";
+        
+    }
+    else if(x.trim().length!=0 && y.trim().length==0){
+        document.getElementById("loiuser").innerHTML = "";
+        document.getElementById("loipass").innerHTML = "Xin mời nhập password";
+    }
+    else{
+        document.getElementById("loiuser").innerHTML = "Xin mời nhập user";
+        document.getElementById("loipass").innerHTML = "Xin mời nhập password";
+    }
 }
 
 function forgot_btn(){
@@ -118,5 +140,29 @@ function validateNew(){
         document.getElementById("tcong").innerText = "Đổi mật khẩu mới thành công!!";
         document.getElementById('box1').style.display='block';
         document.getElementById('box2').style.display='none';
+    }
+}
+function remove_user(){
+    let x= document.getElementById('user').value;
+    if(x!==0){
+        document.getElementById("loiuser").innerHTML = "";
+    }
+}
+function remove_pass(){
+    let x= document.getElementById('pass').value;
+    if(x!==0){
+        document.getElementById("loipass").innerHTML = "";
+    }
+}
+function remove_oldpass(){
+    let x= document.getElementById('oldpass').value;
+    if(x!==0){
+        document.getElementById("loioldpass").innerHTML = "";
+    }
+}
+function remove_newpass(){
+    let x= document.getElementById('newpass').value;
+    if(x!==0){
+        document.getElementById("loinewpass").innerHTML = "";
     }
 }

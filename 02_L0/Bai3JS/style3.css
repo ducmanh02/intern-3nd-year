@@ -28,14 +28,11 @@ a{
     z-index: 1;
     left: 50%;
     transform: translate(-50%);
-    height: 330px;
     width: 300px;
     background: whitesmoke;
      
 }
-#box2{
-    height: 300px;
-}
+
 .xbtn{
     transform: translate(276px,0px);
     border: none;
@@ -52,8 +49,8 @@ a{
     display:inline-block;
     position: relative;
     margin-left: 50%;
-    width: 70%;
     transform: translate(-50%);
+    width: 70%;
 }
 .fa-solid{
     transform: translate(9px,30px);
@@ -68,20 +65,6 @@ input[type=text],input[type=password],checked {
     padding-left: 30px;
     
 }
-input[type=password],checked {
-    margin-bottom: 10px;
-}
-/* .input-form span{
-    position: absolute;
-    height: 30px;
-    width: 80%;
-    border-radius: 5px;
-    border: 1px solid red;
-    padding: 5px;
-    padding-left: 30px;
-    margin-bottom: 5px;
-    top:19px;
-} */
 .btn1{
     padding: 10px 30px;
     margin-top: 10px;
@@ -91,9 +74,20 @@ input[type=password],checked {
 .forgot-pass{
     height: 40px;
     width: 100%;
+    
     background-color: #ecf0f1;
     text-align: center;
     cursor: pointer;
     border: none;
+    margin-top: 30px;
+}
+.back{
+    margin-top: 50px;
 }
 
+.error-pass{
+    color: red; font-size: 14px;
+}
+.success-pass{
+    color: green;font-size: 14px;
+}

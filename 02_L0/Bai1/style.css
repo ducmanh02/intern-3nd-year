@@ -11,16 +11,16 @@
 #a2{
     border :5px solid brown;
     width : 450px;
-    height: 60px;
+    height: 100px;
     background-color: brown;
     position: fixed;
     z-index: 2;
-    top: -1px;
+    top: 5px;
 }
 #a3{
     border :5px solid orange;
     width : 450px;
-    height: 60px;
+    height: 100px;
     background-color: orange;
     position: fixed;
     bottom: 0;

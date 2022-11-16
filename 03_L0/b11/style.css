@@ -16,40 +16,46 @@
     margin: auto;
     padding:  20px;
 }
-
-input[type=text] {
+.input-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.box-1{
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+input[type=text] ,textarea{
     border: 1px solid #eeeeee;
     border-radius: 3px;
     box-shadow: 0 1px 1px 0 #ddd inset;
     font-size: 14px;
-    
-    margin-bottom: 10px;
     height: 40px;
+}
+textarea{
+    border: 1px solid #eeeeee;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px 0 #ddd inset;
+    font-size: 14px;
 }
 #fullName{
     
-    width: 45%;
-    padding:5px;
+    width: 95%;
+    padding-left: 5px;
 }
 #email{
-    float:right;
-    position: relative;
-    left:12px;
-    
-    width: 45%;
-    padding:5px;
+    width: 100%;
+    padding-left: 5px;
 
 }
 #subject{
-    margin-bottom: 10px;
     width: 100%;
-    padding:5px;
+    padding-left: 5px;
 }
 #mess{
-    margin-bottom: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 200px;
+    padding: 5px 0 0 5px;
+    height: 30vh;
     width: 100%;
     
 }
@@ -62,28 +68,36 @@ input[type=text] {
     min-width: 125px;
     padding: 11px 10px;
     text-align: center;
+    position: relative;
+    top: 10px;
 }
 .btn:hover{
     opacity: 0.7;
 }
 .plus{
     position: relative;
-    top:-10px;
+    top:0px;
     opacity: 0.6;
     float: right;
     font-size: 12px;
+    margin: 0;
     /* margin-bottom: 5px; */
 }
 @media only screen and (max-width:600px) {
     .container{
         width: 80%;
     }
+    .box-1{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;  
+    }
     .title{
         font-size:14px;
     }
     input[type=text] {
         border: 1px solid #eeeeee;
-        font-size: 12px;
+        font-size: 13px;
     }
     #fullName{
         width: 100%;
@@ -91,55 +105,23 @@ input[type=text] {
     #email{
         width: 100%;
         
-    }
-    #mess{
-        padding-bottom: 100px;
-    }
-    
+    } 
     .btn{
         padding: 14px 14px;
         font-size: 14px;
         width: 100%;
     }
     .plus{
-        font-size: 10px;
+        font-size: 13px;
     }
 }
-/* @media only screen and (min-width:425px)and (max-width:625px) {
-    .title{
-        font-size:16px;
-    }
-    input[type=text] {
-        border: 1px solid #eeeeee;
-        font-size: 12px;
+@media only screen and (min-width:600px)and (max-width:768px) {
+    .box-1{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;  
     }
     #fullName{
         width: 100%;
     }
-    #email{
-        width: 100%;
-        
-    }
-    #mess{
-        padding-bottom: 100px;
-    }
-    button{
-        position: relative;
-        width: 60%;
-        left: 20%;
-    }
-    .btn{
-        padding: 7px 14px;
-        font-size: 10px;
-    }
-    .plus{
-        font-size: 10px;
-    }
-}
-@media only screen and (min-width:626px)and (max-width:825px) {
-    button{
-        position: relative;
-        width: 60%;
-        left: 20%;
-    }
-} */
+} 

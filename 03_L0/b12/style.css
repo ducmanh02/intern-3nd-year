@@ -4,24 +4,25 @@
 .title1{
     font-size: 20px;
     font-weight: 300;
-    padding-top: 20px;
-    margin: 10px;
-    margin-left: 30px;
+    position: relative;
+    top: 30px;
+    left: 30px;
 }
 hr{
     width: 30px;
     float: left;
     position: relative;
     left :30px;
-    top:-10px;
+    top:10px;
     background-color :#fcb739;
     color: #fcb739;
     height:2px;
     border-width:0;
-    margin-bottom: 15px;
+
 }
 .contact{
     background-color: #dadada;
+    margin: auto;
 }
 .content{
     display: grid;
@@ -29,20 +30,28 @@ hr{
     height: auto;
     grid-template-columns: 35% 65%;
     column-gap: 30px;
-    
     padding: 10px;
+    
+}
+.locate ,.mail, .number{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
 }
 i{
-    float: left;
-    padding-right: 10px;
-    padding-bottom: 10px;
     opacity: 0.7;
+    position: relative;
+    top: 10px;
 }
 .info{
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    position: relative;
+    top: 20px;
 }
 .fa-solid{
-    font-size: 16px;
+    font-size: 22px;
 }
 .info .title2 {
     opacity: 1;
@@ -51,16 +60,20 @@ i{
 }
 .info p {
     opacity: 0.7;
-    font-size: 13px;
+    font-size: 14px;
 }
 .title3{
     font-size:16px ;
     font-weight:500;
 
 }
-input[type=text] {
+.form-input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input[type=text], textarea{
     width: 100%;
-    margin-bottom: 10px;
     opacity: 0.8;
     border: none;
     outline: none;
@@ -69,17 +82,17 @@ input[type=text] {
     font-size: 13px;
     padding: 10px;
 }
-.message{
-    padding-bottom: 100px;
+.box-1{
+    width: 100%;
 }
 .btn1{
     color: white;
     background-color: #30b8b6;
     border: none;
     font-size: 12px;
-    padding: 10px 10px;
+    padding: 10px;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin: 20px 0px;
 }
 .btn1:hover{
     opacity: 0.7;
@@ -87,15 +100,17 @@ input[type=text] {
 @media only screen and (max-width:426px) {
     .info p {
         font-size: 14px;
+        
+    }
+    .info{
+        max-width: 100%;
     }
     .content{
         display: grid;
-        
         height: auto;
         grid-template-columns: 100%;
-        
-        
         padding: 10px;
+        gap:20px;
     }
     .fa-solid{
         font-size: 16px;
@@ -110,7 +125,7 @@ input[type=text] {
     }
     .btn1{
         width: 104%;
-
+        padding: 15px;
     }
 
 }
@@ -118,12 +133,14 @@ input[type=text] {
     .info p {
         font-size: 14px;
     }
+    .info{
+        max-width: 100%;
+    }
     .content{
         display: grid;
-        
         height: auto;
         grid-template-columns: 100%;
-        
+        gap:20px;
         
         padding: 10px;
     }
@@ -139,7 +156,12 @@ input[type=text] {
         padding-bottom: 80px;
     }
     .btn1{
-        width: 104%;
+        width: 60%;
 
+    }
+}
+@media only screen and (min-width:625px)and (max-width:1024px) {
+    .info{
+        max-width: 100%;
     }
 }

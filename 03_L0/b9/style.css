@@ -17,6 +17,7 @@
 }
 .title{
     width: 100%;
+    margin-top: 30px ;
     text-align: center;
 }
 .items{
@@ -34,20 +35,20 @@
 
 /* image */
 #ibm{
-    width: 200px;
-    padding-top: 60px;
-    padding-bottom:60px;
+    width: 250px;
+    padding-top: 75px;
+    padding-bottom:75px;
 }
 #win{
-    width: 100px;
+    width: 150px;
     padding: 50px;
 }
 #apple{
-    width: 160px;
+    width: 200px;
     padding:20px
 }
 #gg{
-    height: 100px;
+    height: 120px;
     padding-top: 60px;
     padding-bottom:60px;
 }
@@ -55,39 +56,38 @@
 .content p{
     text-align: center;
     font-style: italic;
-    font-size: 16px;
+    font-size: 18px;
     opacity: 0.8;
-    margin-bottom: 15px;
 }
 @media only screen and (max-width:600px) {
     .title{
-        font-size:20px;
+        font-size:32px;
     }
     .container{
         display: grid;
         grid-template-columns: 100%;
     }
     #ibm{
-        width: 100px;
+        width: 150px;
         padding-top: 30px;
         padding-bottom:30px;
     }
     #win{
-        width: 50px;
+        width: 80px;
         padding: 25px;
     }
     #apple{
-        width: 80px;
+        width: 150px;
         padding:10px
     }
     #gg{
-        height: 40px;
+        height: 80px;
         padding-top: 30px;
         padding-bottom:30px;
     }
 
     .content p{
-        font-size: 12px;
+        font-size: 16px;
 
     }
 }@media only screen and (min-width:600px) and (max-width:992px) {
@@ -117,7 +117,7 @@
         padding-bottom:45px;
     }
     .content p{
-        font-size: 14px;
+        font-size: 18px;
 
     }
 }

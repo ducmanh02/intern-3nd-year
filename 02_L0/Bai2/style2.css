@@ -30,7 +30,7 @@ span{
     
 }
 
-@media only screen and ( min-width:320px) and (max-width:424px)  {
+@media only screen and (max-width:424px)  {
     .odd{
         background-color:red;
         width: 20px;
@@ -40,7 +40,7 @@ span{
         width: 30px;
     }
 }
-@media only screen and (min-width:425px) and (max-width:767px){
+@media only screen and (min-width:425px) and (max-width:768px){
     .odd{
         background-color: yellow ;
         width: 20px;
@@ -50,7 +50,7 @@ span{
         width: 50px;
     }
 }
-@media only screen and (min-width:768px) and (max-width: 991px) {
+@media only screen and (min-width:768px) and (max-width: 992px) {
     .odd{
         background-color: hsl(254, 81%, 27%) ;
         width: 30px;

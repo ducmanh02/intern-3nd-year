@@ -11,8 +11,12 @@ body {
     line-height: 1.5;
   }
 .container {
-    width: 60%;
+    width: 65%;
+    height: 60vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     text-align:start;
     margin: auto;
 }
@@ -21,11 +25,12 @@ h1{
     font-size: 27px;
     margin-bottom: 20px;
 }
-.intro p{
+/* .intro p{
     margin-bottom: 23px;
-}
+} */
 .intro{
     width: 100%;
+    
 }
 .intro p{
     opacity: 0.8;
@@ -45,7 +50,11 @@ i{
     font-size: 16px;
     color: #c5da3a;
 }
- @media only screen and (max-width:600px) {
+ @media only screen and (max-width:425px) {
+    .container {
+        width: 90%;
+        height: 110vh;
+    }
     .intro h1{
         font-size: 22px;
     }
@@ -69,7 +78,39 @@ i{
         
     }
 }
+@media only screen and (min-width:425px) and (max-width:600px) {
+    .container {
+        width: 80%;
+        height: 106vh;
+    }
+    .intro h1{
+        font-size: 22px;
+    }
+    .intro p{
+        font-size: 14px;
+    }
+    .list-items{
+        display: grid;
+        grid-template-columns: auto ;
+        row-gap: 8px;
+        width: 100%;
+    }
+    .items{
+        font-size: 14px;
+    
+        width: 100%;
+        
+    }
+    i{
+        font-size: 14px;
+        
+    }
+}
+
  @media only screen and (min-width:600px) and (max-width:800px) {
+    .container {
+        height: 75vh;
+    }
     .intro h1{
         font-size: 27px;
     }

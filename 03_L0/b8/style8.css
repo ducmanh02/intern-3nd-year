@@ -13,16 +13,22 @@ h1{
     flex-direction: column;
     width: 90%;
     height: auto;
-    left: 5%;
+    /* left: 5%; */
+    margin: auto;
+    gap: 10px;
     
 }
 .items{
     position: relative;
     width: 100%;
     height: auto;
-    background-color:#fbfbfb ;
+    background-color: #fbfbfb;
     padding: 10px;
-    margin-bottom: 10px ;
+    /* margin-bottom: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
 }
 .user{
     display: flex;
