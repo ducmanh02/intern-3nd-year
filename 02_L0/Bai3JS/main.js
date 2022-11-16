@@ -99,12 +99,37 @@ function back(){
     document.getElementById('box1').style.display = "block";
 }
 const loading_function= ()=>{
-    document.getElementById('save_btn').innerHTML = "Loading...";
+    // document.getElementById('save_btn').innerHTML = "Loading...";
     
-    setTimeout(()=>{
-        validateNew();
-        document.getElementById('save_btn').innerHTML = "Save";
-    }, 1000)
+    // setTimeout(()=>{
+    //     validateNew();
+    //     document.getElementById('save_btn').innerHTML = "Save";
+    // }, 1000)
+
+    let x = document.getElementById('oldpass').value;
+    let y = document.getElementById('newpass').value;
+    if(x.trim().length!=0 && y.trim().length!=0){
+        document.getElementById("loioldpass").innerHTML = "";
+        document.getElementById("loinewpass").innerHTML = "";
+        document.getElementById('save_btn').innerHTML = "Loading...";
+        setTimeout(()=>{
+            validateNew();
+            document.getElementById('save_btn').innerHTML = "Save";
+        }, 1000)
+    }
+    else if(x.trim().length==0 && y.trim().length!=0){
+        document.getElementById("loinewpass").innerHTML = "";
+        document.getElementById("loioldpass").innerHTML = "Xin mời nhập pass cũ";
+        
+    }
+    else if(x.trim().length!=0 && y.trim().length==0){
+        document.getElementById("loioldpass").innerHTML = "";
+        document.getElementById("loinewpass").innerHTML = "Xin mời nhập pass mới";
+    }
+    else{
+        document.getElementById("loioldpass").innerHTML = "Xin mời nhập pass cũ";
+        document.getElementById("loinewpass").innerHTML = "Xin mời nhập pass mới";
+    }
 }
 function validateNew(){
     const oldPass = document.getElementById('oldpass').value;
