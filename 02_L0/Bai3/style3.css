@@ -49,6 +49,7 @@ a{
     font-weight: 600;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 .text-mem{ 
     display: block;
@@ -83,6 +84,7 @@ input[type=text],input[type=password],checked {
 .btn1{
     position: absolute;
     padding: 10px 30px;
+    top: 10px;
     left: 50%;
     transform: translate(-50%);
 }
@@ -94,13 +96,13 @@ input[type=text],input[type=password],checked {
 .forgot-pass{
     height: 40px;
     width: 100%;
-    
     background-color: #ecf0f1;
     text-align: center;
     cursor: pointer;
     border: none;
     margin-top: 30px;
 }
+
 .back{
     margin-top: 30px;
 }

@@ -1,59 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style3.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
     <title>Day2</title>
-</head>
-<body>
-    <button class="btn1 color-button" id="dangnhap" onclick="start()"> Đăng nhập hệ thống</button>
+  </head>
+  <body>
+    <button class="btn1 color-button" id="first_step" onclick="start()">
+      Đăng nhập hệ thống
+    </button>
     <div id="container-1">
-        <div>
+      <div>
         <form id="box1">
-                <button class="xbtn" onclick="close_1()">&times;</button>
-                <div class="text-mem font-thin"> <h3>Member Login</h3></div>
-                <div class="input-form ">
-                    
-                    <input oninput="remove_user()" id="user" type="text"  placeholder="Username"  >
-                    <i class="fa-solid fa-user"></i>
-                    <span class="error-pass" id="loiuser"></span>
-                     
-                    <input oninput="remove_pass()" id="pass" type="password" placeholder="Password" >  
-                    <i class="fa-solid fa-lock"></i>
-                    <span class="error-pass" id="loipass"></span>
-                    
-                    <button id="login_btn" class="btn2 color-button" type="button" onclick="loading_f()">Login</button>
-                    <span id="tcong" class="success-pass"></span> 
-                </div>
-                <button type="button" class="forgot-pass" onclick="forgot_btn()" >Forgot Password?</button>
+          <button class="xbtn" onclick="close_1()">&times;</button>
+          <div class="text-mem font-thin"><h3>Member Login</h3></div>
+          <div class="input-form">
+            <input
+              oninput="remove_user()"
+              id="user"
+              type="text"
+              placeholder="Username"
+            />
+            <i class="fa-solid fa-user"></i>
+            <span class="error-pass" id="error_user"></span>
+
+            <input
+              oninput="remove_pass()"
+              id="pass"
+              type="password"
+              placeholder="Password"
+            />
+            <i class="fa-solid fa-lock"></i>
+            <span class="error-pass" id="error_pass"></span>
+
+            <button
+              id="login_btn"
+              class="btn2 color-button"
+              type="button"
+              onclick="loading_f()"
+            >
+              Login
+            </button>
+            <span id="success" class="success-pass"></span>
+          </div>
+          <button type="button" class="forgot-pass" onclick="forgot_btn()">
+            Forgot Password?
+          </button>
         </form>
-    </div>
+      </div>
     </div>
     <div id="container-2">
-        <form>
-            <div id="box2">
-                <div class="text-mem font-smaller font-thin"> <h3>Change Your Password</h3></div>
-                <div class="input-form forgot ">
-                    
-                    <input oninput="remove_oldpass()" id="oldpass" type="password"  placeholder="Old Password"  >
-                    <i class="fa-solid fa-lock"></i>
-                    <span class="error-pass" id="loioldpass"></span>
-                    
-                    <input oninput="remove_newpass() "id="newpass" type="password" placeholder="New Password" >
-                    <i class="fa-solid fa-lock"></i>
-                    <span class="error-pass" id="loinewpass"></span>
-                    
-                    <button id="save_btn" class="btn3 color-button" type="button" onclick="loading_function()" >Save</button>
-                    
-                </div>
-                <button type="button" class="forgot-pass back" onclick="back()" >Back</button>
-            </div>
-        </form>
+      <form>
+        <div id="box2">
+          <div class="text-mem font-smaller font-thin">
+            <h3>Change Your Password</h3>
+          </div>
+          <div class="input-form forgot">
+            <input
+              oninput="remove_oldpass()"
+              id="oldpass"
+              type="password"
+              placeholder="Old Password"
+            />
+            <i class="fa-solid fa-lock"></i>
+            <span class="error-pass" id="error_oldpass"></span>
+
+            <input
+              oninput="remove_newpass() "
+              id="newpass"
+              type="password"
+              placeholder="New Password"
+            />
+            <i class="fa-solid fa-lock"></i>
+            <span class="error-pass" id="error_newpass"></span>
+
+            <button
+              id="save_btn"
+              class="btn3 color-button"
+              type="button"
+              onclick="saving_function()"
+            >
+              Save
+            </button>
+          </div>
+          <button type="button" class="forgot-pass back" onclick="back()">
+            Back
+          </button>
+        </div>
+      </form>
     </div>
     <script src="./main.js"></script>
-</body>
+  </body>
 </html>
