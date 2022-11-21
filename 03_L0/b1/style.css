@@ -45,7 +45,7 @@ a{
 }
 .text1 p{
     margin-top: 10px;
-    font-size: 12px;
+    font-size: 13px;
     opacity: 0.8;
 }
 
@@ -63,7 +63,7 @@ a{
     margin: 0 10px;
     line-height: 30px;
     border-radius:3px ;
-    margin-bottom: 20px;
+    padding: 5px 0;
 }
 .item:hover{
     opacity: 0.6;

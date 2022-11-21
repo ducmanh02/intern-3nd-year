@@ -1,93 +1,66 @@
-*{
-    box-sizing: border-box;
-}
-#all{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-li{
-    list-style-type: none;
-    text-align: center;
-}
-span{
-    text-align: center;
-}
-.odd{
-    background-color:red;
+
+li,span {
+    display: inline-block;
     width: 100px;
-    height: 100px;
-    padding:10px ; 
-    
+    height: 80px;
 }
-.even{
-    background-color:aqua;
-    width: 100px;
-    height: 100px;
-    padding:10px ; 
-    
+ul {
+    padding: 0;
+}
+li:nth-child(2n+1),span:nth-child(2n+1){
+    background-color: red; 
+}
+li:nth-child(2n),span:nth-child(2n) {
+    background-color: blue;
 }
 
-@media only screen and (max-width:424px)  {
-    h2{
-        font-size: 12px;
-    }
-    .odd{
-        background-color:red;
+@media only screen and (max-width:320px){
+    li:nth-child(2n+1),span:nth-child(2n+1) {
         width: 20px;
+        background-color: red;
     }
-    .even{
-        background-color:aqua;
+    li:nth-child(2n),span:nth-child(2n) {
         width: 30px;
-    }
+        background-color: blue;
+    } 
 }
-@media only screen and (min-width:425px) and (max-width:768px){
-    h2{
-        font-size: 12px;
-    }
-    .odd{
-        background-color: yellow ;
+@media only screen and (min-width:321px) and (max-width:425px) {
+    li:nth-child(2n+1),span:nth-child(2n+1){
         width: 20px;
-    }
-    .even{
-        background-color:red ;
-        width: 50px;
-    }
-}
-@media only screen and (min-width:768px) and (max-width: 992px) {
-    h2{
-        font-size: 13px;
-    }
-    .odd{
-        background-color: hsl(254, 81%, 27%) ;
-        width: 30px;
-    }
-    .even{
         background-color: yellow;
-        width: 40px;
     }
-}
-@media only screen and (min-width:992px) and (max-width:1199px)  {
-    h2{
-        font-size: 14px;
-    }
-    .odd{
-        background-color: yellow ;
-        width: 30px;
-    }
-    .even{
-        background-color: violet;
-        width: 40px;
-    }
-}
-@media (width:1200px)  {
-    .odd{
-        background-color: violet;
+    li:nth-child(2n),span:nth-child(2n) {
         width: 50px;
+        background-color: red;
+    } 
+}
+@media only screen and (min-width:426px) and (max-width:768px) {
+    li:nth-child(2n+1),span:nth-child(2n+1) {
+        width: 30px;
+        background-color: rgb(23, 23, 114)
     }
-    .even{
-        background-color: pink;
+    li:nth-child(2n),span:nth-child(2n) {
+        width: 40px;
+        background-color: yellow;
+    } 
+}
+@media only screen and (min-width:769px) and (max-width:992px) {
+    li:nth-child(2n+1),span:nth-child(2n+1) {
+        width: 30px;
+        background-color: yellow;
+    }
+    li:nth-child(2n),span:nth-child(2n) {
+        width: 40px;
+        background-color: violet;
+    } 
+}
+@media only screen and (min-width:992px) and (max-width:1200px) {
+    li:nth-child(2n+1),span:nth-child(2n+1) {
+        width: 50px;
+        background-color: violet;
+    }
+    li:nth-child(2n),span:nth-child(2n) {
         width: 100px;
-    }
+        background-color: pink;
+    } 
 }

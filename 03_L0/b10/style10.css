@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 .container{
-    width: 45%;
+    width: 55%;
     margin: auto;
     background-color:#f2f3f5 ;
     padding: 25px;
@@ -16,9 +19,6 @@
 }
 .items {
     display: flex;
-    /* margin:0px 20px;  */
-    /* margin-bottom: 30px; */
-
     padding-bottom: 30px;
     border-bottom: 1px dashed #f44336;
 }
@@ -30,10 +30,13 @@
 }
 .left-content{
     display: inline-block;
-    padding:10px 20px 10px;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    line-height: 80px;
     margin-right: 20px;
-    font-size:70px;
-    font-weight: thin;
+    font-size:40px;
+    font-weight: 100;
     color: #fff;
     background-color: #d997de;
     border-radius: 5px;
@@ -42,21 +45,21 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 620px;
+    flex: 1;
 }
 .title {
     color: #1f1f1f;
     font-size: 24px;
     font-weight:600;
-    
+    margin-bottom: 10px;
 }
 .scp{
-    font-size: 16px;
-    opacity: 0.6;
+    font-size: 14px;
+    opacity: 0.4;
 }
  @media only screen and (max-width:600px) {
     .container{
-        width: 70%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap: 30px;
@@ -64,13 +67,12 @@
     .items{
         display: flex;
         flex-direction: column;
-        
-       
     }
     .left-content{
-        padding:6px 12px 6px;
-        width: 30px;
-        font-size:40px;
+        height: 80px;
+        width: 80px;
+        text-align: center;
+        line-height: 80px;
         margin: 0 auto 10px auto;
         
         
@@ -89,16 +91,18 @@
 }
 @media only screen and (min-width:600px) and (max-width:992px) {
     .container{
-        width: 70%;
+        width: 80%;
+        
     }
     .items{
         display: flex;
         
     }
     .left-content{
-        padding:16px 22px;
-        height: 45px;
-        width: 30px;
+        height: 80px;
+        width: 80px;
+        text-align: center;
+        line-height: 80px;
         font-size:40px;
         margin-right:  20px;
         
@@ -114,10 +118,5 @@
     }
     .scp{
         font-size: 16px;
-    }
-}
-@media only screen and (min-width:992px) {
-    .left-content{
-        height: 75px;
     }
 }

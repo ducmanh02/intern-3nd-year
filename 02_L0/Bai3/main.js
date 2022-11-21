@@ -1,11 +1,11 @@
 function start(){
-    document.getElementById('box1').style.display='block';
+    document.getElementById('container-1').style.display='block';
     document.getElementById('dangnhap').style.display='none';
 }
 function close_1(){
     refresh();
     document.getElementById('login_btn').innerHTML = "Login";
-    document.getElementById('box1').style.display='none';
+    document.getElementById('container-1').style.display='none';
     document.getElementById('btn1').style.display= 'block';
 
 }
@@ -89,14 +89,14 @@ const loading_f = ()=>{
 
 function forgot_btn(){
     refresh();
-    document.getElementById('box1').style.display='none';
-    document.getElementById('box2').style.display = "block";
+    document.getElementById('container-1').style.display='none';
+    document.getElementById('container-2').style.display = "block";
 
 }
 function back(){
     refresh();
-    document.getElementById('box2').style.display = "none";
-    document.getElementById('box1').style.display = "block";
+    document.getElementById('container-2').style.display = "none";
+    document.getElementById('container-1').style.display = "block";
 }
 const loading_function= ()=>{
     // document.getElementById('save_btn').innerHTML = "Loading...";
@@ -163,8 +163,8 @@ function validateNew(){
     if(true) {
         Passcu = newPass;
         document.getElementById("tcong").innerText = "Đổi mật khẩu mới thành công!!";
-        document.getElementById('box1').style.display='block';
-        document.getElementById('box2').style.display='none';
+        document.getElementById('container-1').style.display='block';
+        document.getElementById('container-2').style.display='none';
     }
 }
 function remove_user(){

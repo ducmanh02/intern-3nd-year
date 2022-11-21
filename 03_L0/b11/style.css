@@ -2,6 +2,7 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .title{
     font-size: 18px;
@@ -57,8 +58,12 @@ textarea{
     padding: 5px 0 0 5px;
     height: 30vh;
     width: 100%;
+    resize: none;
     
 }
+/* textarea{
+    resize: none;
+} */
 .btn{
     background-color: #7dcefd;
     border: 1px solid #59a8d5;
@@ -85,7 +90,7 @@ textarea{
 }
 @media only screen and (max-width:600px) {
     .container{
-        width: 80%;
+        width: 100%;
     }
     .box-1{
         display: grid;
@@ -116,6 +121,9 @@ textarea{
     }
 }
 @media only screen and (min-width:600px)and (max-width:768px) {
+    .container{
+        width: 100%;
+    }
     .box-1{
         display: grid;
         grid-template-columns: auto;

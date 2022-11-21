@@ -3,6 +3,12 @@
     margin: 0;
 
 }
+#a1 h1, #a3 h1{
+    float: right;
+}
+#a5,#a4,#a6{
+    float: left;
+}
 #a1{
     border: 5px solid red;
     width: 1000px;
@@ -11,11 +17,11 @@
 #a2{
     border :5px solid brown;
     width : 450px;
-    height: 100px;
+    height: 105px;
     background-color: brown;
     position: fixed;
     z-index: 2;
-    top: 5px;
+    top: 0px;
 }
 #a3{
     border :5px solid orange;
@@ -46,7 +52,7 @@
     border :5px solid yellow;
     width: 100px;
     height: 100px;
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     background-color: yellow;

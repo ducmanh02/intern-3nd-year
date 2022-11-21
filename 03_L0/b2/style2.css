@@ -17,6 +17,7 @@ a{
     font-size: 16px;
     opacity: 1;
     padding: 16px 14px;
+    box-shadow: 2px 2px 2px black;
 }
 a:hover{
     opacity: 0.8;
@@ -27,7 +28,8 @@ a:hover{
     position: relative;
     text-align: center;
     color: white;
-    background: url("./bg_special.png") left top;
+    background:linear-gradient(0deg ,rgba(0, 0,0,0.2),rgba(0, 0, 0,0.2)), url("./bg_special.png") left top no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -46,9 +48,4 @@ a:hover{
     flex-direction: column;
     justify-content: space-around;
     height: 17vh;
-}
-@media only screen and (max-width:425px) {
-    .content{
-        height: 60vh;
-    }
 }

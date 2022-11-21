@@ -2,6 +2,7 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .title{
     color: #ffce1b;
@@ -12,7 +13,7 @@
     width: 90%;
     height: auto;
     margin: auto;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: auto auto;
     gap: 10px;
 }
 .title{
@@ -36,21 +37,23 @@
 /* image */
 #ibm{
     width: 250px;
-    padding-top: 75px;
-    padding-bottom:75px;
+    padding-top: 120px;
+    padding-bottom:30px;
 }
 #win{
-    width: 150px;
-    padding: 50px;
+   
+    width: 100px;
+    padding-top: 120px;
+    padding-bottom: 30px;
 }
 #apple{
-    width: 200px;
-    padding:20px
+    width:170px;
+    padding-bottom:0px;
+    padding-top: 40px;
 }
 #gg{
-    height: 120px;
-    padding-top: 60px;
-    padding-bottom:60px;
+    width: 240px;
+    padding-top: 130px;
 }
 
 .content p{
@@ -73,17 +76,17 @@
         padding-bottom:30px;
     }
     #win{
-        width: 80px;
-        padding: 25px;
+        width: 110px;
+        padding: 15px;
     }
     #apple{
         width: 150px;
         padding:10px
     }
     #gg{
-        height: 80px;
+        width: 160px;
         padding-top: 30px;
-        padding-bottom:30px;
+        padding-bottom: 10px;
     }
 
     .content p{
@@ -95,26 +98,28 @@
         font-size: 32px;
     }
     .container{
-        grid-template-columns: 48% 48%;
+        grid-template-columns: auto auto;
         column-gap: 20px;
     }
     #ibm{
         width: 150px;
-        padding-top: 45px;
-        padding-bottom:45px;
+        padding-top: 80px;
+        padding-bottom:10px;
     }
     #win{
         width: 75px;
-        padding: 37.5px;
+        padding-top: 60px;
+        padding-bottom: 15px;
     }
     #apple{
         width: 100px;
-        padding:25px
+        padding-top: 33px;
+        /* padding: 25px; */
+        padding-bottom: 10px;
     }
     #gg{
-        height: 60px;
-        padding-top: 45px;
-        padding-bottom:45px;
+        width: 200px;
+    padding-top: 77px;
     }
     .content p{
         font-size: 18px;

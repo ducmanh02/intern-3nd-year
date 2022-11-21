@@ -26,7 +26,11 @@ body{
     border-radius: 50%;
     border: 2px solid #70cbce;
     display: inline-block;
-    padding: 18px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 15px;
+    width: 70px;
     color: #70cbce;
     /* margin-bottom: 35px; */
 
@@ -40,7 +44,7 @@ body{
     opacity: 0.8;
     font-size: 18px;
     /* margin-bottom: 25px; */
-    padding: 0 20px;
+    
 }
 /* .form{
     display: flex;
@@ -87,6 +91,7 @@ button:hover{
     }
     .scp{
         font-size: 16px;
+        padding: 0 20px;
     }
     .btn{
         font-size: 15px;
@@ -114,6 +119,7 @@ button:hover{
     }
     .scp{
         font-size: 16px;
+        padding: 0 20px;
     }
     button{
         width: 35%;

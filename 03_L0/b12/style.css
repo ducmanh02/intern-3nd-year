@@ -1,37 +1,32 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 .title1{
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 300;
-    position: relative;
-    top: 30px;
-    left: 30px;
+    padding: 30px;
 }
 hr{
     width: 30px;
     float: left;
     position: relative;
-    left :30px;
-    top:10px;
-    background-color :#fcb739;
+    left: 30px;
+    top: -20px;
+    background-color: #fcb739;
     color: #fcb739;
-    height:2px;
-    border-width:0;
+    height: 2px;
+    border-width: 0;
 
 }
-.contact{
-    background-color: #dadada;
-    margin: auto;
-}
+
 .content{
-    display: grid;
-    width: 80%;
-    height: auto;
-    grid-template-columns: 35% 65%;
-    column-gap: 30px;
-    padding: 10px;
-    
+    display: flex;
+    flex-direction: row;
+    column-gap: 70px;
+    margin: 0 30px;
 }
 .locate ,.mail, .number{
     display: flex;
@@ -39,23 +34,27 @@ hr{
     gap: 10px;
 }
 i{
-    opacity: 0.7;
-    position: relative;
-    top: 10px;
+    opacity: 0.4;
+    /* position: relative;
+    top: 0px; */
+}
+.info--margin{
+    margin-top: 30px;
 }
 .info{
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    position: relative;
-    top: 20px;
+}
+.box1 {
+    width: 100%;
 }
 .fa-solid{
     font-size: 22px;
 }
 .info .title2 {
     opacity: 1;
-    font-size: 16px;
+    font-size: 22px;
     font-weight:500;
 }
 .info p {
@@ -63,9 +62,9 @@ i{
     font-size: 14px;
 }
 .title3{
-    font-size:16px ;
+    font-size:22px ;
     font-weight:500;
-
+    margin-bottom: 20px;
 }
 .form-input{
     display: flex;
@@ -75,12 +74,12 @@ i{
 input[type=text], textarea{
     width: 100%;
     opacity: 0.8;
-    border: none;
-    outline: none;
+    
 }
 .name, .email, .subject, .message{
     font-size: 13px;
     padding: 10px;
+    resize: none;
 }
 .box-1{
     width: 100%;
@@ -115,17 +114,23 @@ input[type=text], textarea{
     .fa-solid{
         font-size: 16px;
     }
-    .name, .email, .subject, .message{
+    .name, .email, .subject{
         font-size: 14px;
         padding: 5px;
         height: 30px;
     }
     .message{
-        padding-bottom: 80px;
+        height: 100px;
+        /* padding-bottom: 0px; */
     }
     .btn1{
-        width: 104%;
+        width: 100%;
         padding: 15px;
+    }
+    input[type=text], textarea {
+        width: 100%;
+        opacity: 0.8;
+        padding: 20px 10px;
     }
 
 }
@@ -147,17 +152,23 @@ input[type=text], textarea{
     .fa-solid{
         font-size: 16px;
     }
-    .name, .email, .subject, .message{
+    .name, .email, .subject{
         font-size: 14px;
-        padding: 5px;
+        padding: 10px;
         height: 30px;
     }
     .message{
-        padding-bottom: 80px;
+        height: 130px;
+        /* padding-bottom: 0px; */
     }
     .btn1{
         width: 60%;
 
+    }
+    input[type=text], textarea {
+        width: 100%;
+        opacity: 0.8;
+        padding: 20px 10px;
     }
 }
 @media only screen and (min-width:625px)and (max-width:1024px) {
